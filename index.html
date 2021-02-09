@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Microtonal Background</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="app">
+        <div class="container-left">
+            <ul class="song-list">
+            </ul>
+            <form class="upload-song" action="/songs" method="POST" enctype="multipart/form-data">
+                Upload song:
+                <input type="file" name="song"/>
+                <input type="submit" value="Enter"/>
+            </form>
+        </div>
+        <div class="container-right">
+            <audio class="audio" controls></audio>
+        </div>
+    </div>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
